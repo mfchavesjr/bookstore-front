@@ -1,4 +1,6 @@
+import { CategoriaService } from './../categoria.service';
 import { Component, OnInit } from '@angular/core';
+import { Categoria } from '../categoria.module';
 
 @Component({
   selector: 'app-categoria-create',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriaCreateComponent implements OnInit {
 
-  constructor() { }
+  categoria: Categoria = {
+    nome: '',
+    descricao: ''
+  }
+
+  constructor(private service: CategoriaService) { }
 
   ngOnInit(): void {
+  }
+
+  create(): void {
+    this.service.create(this.categoria).subscribe((resposta) => {
+      console.log(resposta)
+    })
   }
 
 }

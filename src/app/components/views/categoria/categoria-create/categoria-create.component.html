@@ -3,11 +3,12 @@
 
   <mat-form-field class="form" appearance="fill">
     <mat-label>Nome</mat-label>
-    <input matInput name="nome" placeholder="Ex. Computação" type="text" />
+    <input [(ngModel)]="categoria.nome" matInput name="nome" placeholder="Ex. Computação" type="text" />
   </mat-form-field>
   <mat-form-field class="form" appearance="fill">
     <mat-label>Descrição</mat-label>
     <textarea
+    [(ngModel)]="categoria.descricao"
       matInput
       name="descricao"
       placeholder="Ex. Livro de Computação"
@@ -15,7 +16,7 @@
   </mat-form-field>
 
   <div class="buttons">
-    <button class="mat-elevation-z8" mat-raised-button color="primary">
+    <button (click)="create()" class="mat-elevation-z8" mat-raised-button color="primary">
       Criar
     </button>
     <button class="mat-elevation-z8" mat-raised-button color="warn">
