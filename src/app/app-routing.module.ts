@@ -1,8 +1,10 @@
 import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
+import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
+import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
+
 
 const routes: Routes = [
   {
@@ -14,6 +16,9 @@ const routes: Routes = [
   },{
     path: 'categorias/create',
     component: CategoriaCreateComponent
+  },{
+    path: 'categorias/delete/:id',
+    component: CategoriaDeleteComponent
   }
 ];
 
