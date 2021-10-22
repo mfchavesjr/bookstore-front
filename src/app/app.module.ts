@@ -21,6 +21,7 @@ import { FormsModule } from "@angular/forms";
 import { MatInputModule } from "@angular/material/input";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { CategoriaCreateComponent } from "./components/views/categoria/categoria-create/categoria-create.component";
 
 @NgModule({
@@ -31,7 +32,7 @@ import { CategoriaCreateComponent } from "./components/views/categoria/categoria
     NavComponent,
     HomeComponent,
     CategoriaReadComponent,
-    CategoriaCreateComponent
+    CategoriaCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +50,7 @@ import { CategoriaCreateComponent } from "./components/views/categoria/categoria
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
