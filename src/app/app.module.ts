@@ -4,6 +4,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaCreateComponent } from "./components/views/categoria/categoria-create/categoria-create.component";
 import { CategoriaReadComponent } from "./components/views/categoria/categoria-read/categoria-read.component";
+import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -35,7 +36,8 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     HomeComponent,
     CategoriaReadComponent,
     CategoriaCreateComponent,
-    CategoriaDeleteComponent
+    CategoriaDeleteComponent,
+    CategoriaUpdateComponent
   ],
   imports: [
     BrowserModule,
