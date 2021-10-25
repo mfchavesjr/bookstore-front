@@ -25,6 +25,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { LivroReadAllComponent } from './components/views/livro/livro-read-all/livro-read-all.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     CategoriaReadComponent,
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
-    CategoriaUpdateComponent
+    CategoriaUpdateComponent,
+    LivroReadAllComponent
   ],
   imports: [
     BrowserModule,
