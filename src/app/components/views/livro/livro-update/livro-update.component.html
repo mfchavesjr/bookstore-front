@@ -1,23 +1,33 @@
 <form>
-  <h1>Alterando uma Categoria</h1>
+  <h1>Alterando um Livro</h1>
 
   <mat-form-field class="form" appearance="fill">
-    <mat-label>Nome</mat-label>
+    <mat-label>Título</mat-label>
     <input
-      [(ngModel)]="categoria.nome"
+      [(ngModel)]="livro.titulo"
       matInput
-      name="nome"
+      name="titulo"
       placeholder="Ex. Computação"
       type="text"
     />
   </mat-form-field>
   <mat-form-field class="form" appearance="fill">
-    <mat-label>Descrição</mat-label>
-    <textarea
-      [(ngModel)]="categoria.descricao"
+    <mat-label>Autor</mat-label>
+    <input
+      [(ngModel)]="livro.autor"
       matInput
-      name="descricao"
-      placeholder="Ex. Livro de Computação"
+      name="autor"
+      placeholder="Ex. José Silva"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="form" appearance="fill">
+    <mat-label>Texto</mat-label>
+    <textarea
+      [(ngModel)]="livro.texto"
+      matInput
+      name="texto"
+      placeholder="Ex. Lorem Ipsum"
     ></textarea>
   </mat-form-field>
 

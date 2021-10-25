@@ -11,7 +11,7 @@ import { Router } from "@angular/router";
 export class CategoriaReadComponent implements OnInit {
   categorias: Categoria[] = [];
 
-  displayedColumns: string[] = ["id", "nome", "descricao", "livros", "acoes"];
+  displayedColumns: string[] = ["id", "nome", "descricao", "acoes"];
 
   constructor(private service: CategoriaService, private router: Router) {}
 
